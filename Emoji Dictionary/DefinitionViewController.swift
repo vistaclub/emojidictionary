@@ -25,6 +25,21 @@ class DefinitionViewController: UIViewController {
         if emoji == "👻" {
             definitionLabel.text = "A scary ghost!"
         }
+        if emoji == "🤡" {
+            definitionLabel.text = "A funny clown!"
+        }
+        if emoji == "😎" {
+            definitionLabel.text = "A dude with cool sunglasses!"
+        }
+        if emoji == "😝" {
+            definitionLabel.text = "A tongue face!"
+        }
+        if emoji == "😡" {
+            definitionLabel.text = "An angry face!"
+        }
+        if emoji == "😜" {
+            definitionLabel.text = "A winky face!"
+        }
         
         
     }
