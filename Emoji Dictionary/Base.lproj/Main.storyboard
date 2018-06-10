@@ -68,16 +68,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTB-TX-Lpn">
+                                <rect key="frame" x="122.5" y="434" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V88-5I-Hyr">
+                                <rect key="frame" x="129" y="475" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="DTB-TX-Lpn" firstAttribute="top" secondItem="Dyg-AM-ruC" secondAttribute="bottom" constant="20" id="0fb-yy-78H"/>
+                            <constraint firstItem="V88-5I-Hyr" firstAttribute="top" secondItem="DTB-TX-Lpn" secondAttribute="bottom" constant="20" id="996-3s-rno"/>
                             <constraint firstItem="Dyg-AM-ruC" firstAttribute="top" secondItem="ehy-hW-5Yy" secondAttribute="bottom" constant="50" id="CAb-61-IoR"/>
+                            <constraint firstItem="DTB-TX-Lpn" firstAttribute="centerX" secondItem="3AU-Sa-CCo" secondAttribute="centerX" id="PgS-7C-FN7"/>
                             <constraint firstItem="ehy-hW-5Yy" firstAttribute="centerX" secondItem="3AU-Sa-CCo" secondAttribute="centerX" id="SJe-hm-kUR"/>
                             <constraint firstItem="ehy-hW-5Yy" firstAttribute="top" secondItem="hkp-dH-86v" secondAttribute="bottom" constant="40" id="aFC-g8-hBX"/>
                             <constraint firstItem="Dyg-AM-ruC" firstAttribute="centerX" secondItem="3AU-Sa-CCo" secondAttribute="centerX" id="dyQ-HS-1un"/>
+                            <constraint firstItem="V88-5I-Hyr" firstAttribute="centerX" secondItem="3AU-Sa-CCo" secondAttribute="centerX" id="vW3-tI-1XD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="V88-5I-Hyr" id="eFJ-6y-9eq"/>
+                        <outlet property="categoryLabel" destination="DTB-TX-Lpn" id="rUH-CR-xvD"/>
                         <outlet property="definitionLabel" destination="Dyg-AM-ruC" id="nyz-SK-w7A"/>
                         <outlet property="emojiLabel" destination="ehy-hW-5Yy" id="1fL-HW-BZH"/>
                     </connections>
